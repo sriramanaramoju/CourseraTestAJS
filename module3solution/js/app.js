@@ -70,8 +70,8 @@
         var fulldata= result.data;
         for(var i=0;i<fulldata.menu_items.length;i++)
         {
-          var itemdescription=fulldata.menu_items[i].description;
-          if(itemdescription.indexOf(searchTerm) >= 0){
+          var itemdescription=fulldata.menu_items[i].description.toLowerCase();
+          if(itemdescription.indexOf(searchTerm.toLowerCase()) >= 0){
           itemsFound.push(fulldata.menu_items[i]);
           }
         }
