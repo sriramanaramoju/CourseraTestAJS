@@ -23,7 +23,6 @@
 
   function FoundItemsDirectiveController() {
     var list = this;
-
     list.isEmpty = function() {
       if(list.found != undefined && list.found.length === 0 )
         return true;
