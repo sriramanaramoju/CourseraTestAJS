@@ -21,6 +21,7 @@ function ToBuyController(ShoppingListService) {
 
   };
 }
+
 AlreadyBoughtController.$inject = ['ShoppingListService'];
 function AlreadyBoughtController(ShoppingListService) {
   var boughtctrl = this;
