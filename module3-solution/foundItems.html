@@ -1,0 +1,13 @@
+<h2>Searched Items List</h2>
+<div ng-if="list.isEmpty()">Nothing found</div>
+<ul>
+<table>
+  <tr ng-repeat="item in list.found">
+    <td>{{item.name}}</td>
+    <td>{{item.short_name}}</td>
+     <td>{{item.description}}</td>
+     <td><button ng-click="list.onRemove({index: $index});"> Don't want this one? </button></td>
+  </tr>
+</table>
+</ul>
+
