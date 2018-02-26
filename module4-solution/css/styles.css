@@ -1,0 +1,12 @@
+a{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+li{
+	color: green;
+}
+span{
+	color: black;
+	font-weight: bold;
+}
