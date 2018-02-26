@@ -3,8 +3,10 @@ a{
 	font-style: italic;
 	font-weight: bold;
 }
-li{
+td{
 	color: green;
+	font-style: italic;
+	font-weight: bold;
 }
 span{
 	color: black;

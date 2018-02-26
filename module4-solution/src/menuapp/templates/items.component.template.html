@@ -1,5 +1,10 @@
 <ul>
-  <li ng-repeat="item in $ctrl.menuitems">
-   {{item.name}}</a>
-  </li>
+<table border="2">
+<tr>
+    <th>Item Name</th>
+    <th>Item Description</th> 
+  </tr>  <tr ng-repeat="item in $ctrl.menuitems">
+   <td>{{item.name}}</td>
+   <td>{{item.description}}</td>
+  </tr>
 </ul>
