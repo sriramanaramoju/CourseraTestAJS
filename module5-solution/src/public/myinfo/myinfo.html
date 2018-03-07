@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/styles.css">
+<div class="container">
+  <h2 class="text-center">My Info</h2>
+    <div ng-if="!myInfoCtrl.info">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></div>
+  <div ng-if="myInfoCtrl.info">
+    <div>
+     <label id=fn > First name: {{myInfoCtrl.info.FirstName}}</label><br />
+     <label id=ln > Last name: {{myInfoCtrl.info.LastName}}</label></label></label>  <br />
+     <label id=em > Email address: {{myInfoCtrl.info.email}}</label></label>  <br />
+     <label id=ph > Phone number: {{myInfoCtrl.info.phone}} </label> <br />
+  </div>
+  <div>
+    <h2 class="text-center">Favorite Dish</h2>
+  <menu-item
+             menu-item="myInfoCtrl.menuItem">
+  </menu-item>
+</div>
+  </div>
+</div>
